@@ -20,6 +20,7 @@ const CreateTaskForm = (props) => {
 
   const handleNameChange = (event) => {
     setTaskName(event.target.value);
+    console.log(event.target.value);
   };
 
   const handleDateChange = (event) => {
@@ -47,6 +48,7 @@ const CreateTaskForm = (props) => {
 
     props.addNewTask(newTask);
     resetForm();
+    console.log(newTask)
   };
   return (
     <div>
